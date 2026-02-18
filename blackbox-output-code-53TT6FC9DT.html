@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIGS - National International Global Service</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #111111);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(45deg, #FF0000, #00FF00);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 20px #FF0000; }
+            to { box-shadow: 0 0 20px #00FF00; }
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 0 0 10px #00FF00;
+        }
+        .intro {
+            padding: 40px;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.6;
+            background: rgba(0, 0, 0, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+            border: 2px solid #FF0000;
+        }
+        .bar {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            border: 2px solid #00FF00;
+            box-shadow: 0 0 15px #00FF00;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea, button {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #222;
+            color: #fff;
+            font-size: 1em;
+        }
+        button {
+            background: linear-gradient(45deg, #FF0000, #00FF00);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            border-top: 2px solid #FF0000;
+        }
+        a {
+            color: #00FF00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-shadow: 0 0 5px #00FF00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NIGS</h1>
+        <p>National International Global Service</p>
+    </header>
+    
+    <section class="intro">
+        <h2>Welcome to NIGS</h2>
+        <p>Embark on a journey into the future with our elegant, global services. We connect nations, innovate internationally, and serve globally with precision and style. Experience the blend of sophistication and cutting-edge technology.</p>
+    </section>
+    
+    <section class="bar">
+        <h3>User Registration</h3>
+        <form id="registrationForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    
+    <section class="bar">
+        <h3>Leave a Comment</h3>
+        <form action="mailto:ikhouchkhouch7ousni@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="comment" placeholder="Your Comment" rows="4" required></textarea>
+            <button type="submit">Send Comment</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Follow us on <a href="https://www.instagram.com/nigs_global_service" target="_blank">Instagram</a> | Contact: <a href="mailto:ikhouchkhouch7ousni@gmail.com">ikhouchkhouch7ousni@gmail.com</a></p>
+        <p>&copy; 2023 NIGS. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Simple front-end validation for registration (no backend)
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Registration submitted! (Note: This is a demo. In a real site, data would be processed on a server.)');
+            // You could add AJAX here to send to a backend if needed.
+        });
+    </script>
+</body>
+</html>
